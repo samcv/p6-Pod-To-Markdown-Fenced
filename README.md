@@ -14,7 +14,7 @@ This module overrides `Pod::To::Markdown`'s multi-sub that handles code blocks. 
 
 If that all it did this module would be pretty useless, so in addition, you can define a `info` config option, which will be set as the [info string](http://spec.commonmark.org/0.12/#info-string) on the code block. This will allow syntax highlighting of the code block where supported (like Github).
 
-Usage
+USAGE
 =====
 From command line:
 
