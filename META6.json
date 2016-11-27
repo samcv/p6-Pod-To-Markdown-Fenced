@@ -7,7 +7,7 @@
        "Joshua Yeshouroun"
    ],
    "provides" : {
-      "Pod::To::Markdown::Fenced" : "lib/Pod/To/Markdown/Fenced.pm"
+      "Pod::To::Markdown::Fenced" : "lib/Pod/To/Markdown/Fenced.pm6"
    },
    "depends" : [
        "Pod::To::Markdown"
