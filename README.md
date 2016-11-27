@@ -68,3 +68,11 @@ EXAMPLE
 
 This README contains uses of literal POD and Markdown, so trying to render that correctly with a POD-to-Markdown renderer doesn't work too well. For a better example, refer to my [Net::Netmask](https://github.com/0racle/p6-Net-Netmask) module. The README.md file in that repo is generated completely by this module from the embedded POD in the module file.
 
+LICENCE
+=======
+
+    The Artistic License 2.0 
+
+See LICENSE file in the repository for the full license text.`
+
+
