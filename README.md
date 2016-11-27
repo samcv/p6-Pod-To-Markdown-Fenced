@@ -12,9 +12,9 @@ If so, this module is for you.
 
 This module overrides `Pod::To::Markdown`'s multi-sub that handles code blocks. In the resulting output, that code block will now be fenced rather than indented. In this case, it is no longer strict Markdown, but something closer to CommonMark.
 
-If that all it did this module would be pretty useless, so in addition, you can define a `lang` config option, which will be set as the "info string" on the code block. This will allow syntax highlighting of the code block where supported (like Github).
+If that all it did this module would be pretty useless, so in addition, you can define a `info` config option, which will be set as the [info string](http://spec.commonmark.org/0.12/#info-string) on the code block. This will allow syntax highlighting of the code block where supported (like Github).
 
-Usage
+USAGE
 =====
 From command line:
 
@@ -26,13 +26,13 @@ From Perl 6:
 
     Here is some perl
 
-    =begin code :lang<perl6>
+    =begin code :info<perl6>
     say [>] ('apples', 'oranges')».chars;
     =end code
 
     Some not perl
 
-    =begin code :lang<javascript>
+    =begin code :info<javascript>
     console.log('apples'.length > 'oranges'.length)
     =end code
 
