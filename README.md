@@ -68,15 +68,19 @@ EXAMPLE
 
 This README contains uses of literal POD and Markdown, so trying to render that correctly with a POD-to-Markdown renderer doesn't work too well. For a better example, refer to my [Net::Netmask](https://github.com/0racle/p6-Net-Netmask) module. The README.md file in that repo is generated completely by this module from the embedded POD in the module file.
 
-BUGS AND LIMITATIONS
-====================
-This module depends on [Pod::To::Markdown](https://github.com/softmoth/perl6-pod-to-markdown) which handles `Pod::FormattingCode` by setting a lexical Boolean variable `$in-code-block`. As my multi-sub cannot influenced that lexical variable, you may run into issues when using `Pod::FormattingCode` blocks with this module.
+LIMITATIONS AND ISSUES
+======================
+This module depends on [Pod::To::Markdown](https://github.com/softmoth/perl6-pod-to-markdown) which handles nested `Pod::FormattingCode` by setting a lexical Boolean variable `$in-code-block`. As my multi-sub cannot influence that lexical variable, you may run into issues when using `Pod::FormattingCode` blocks with this module.
+
+This could be solved a number of ways (submitting a pull for `Pod::To::Markdown` to expose that variable to the outside world, or copying parts/all of `Pod::To::Markdown` into this module) but for what I need it works well enough. If people really need nested `Pod::FormattingCode` blocks, I'm happy to respond to an issue or accept a pull request that resolves it.
+
+This module works by setting a (currently) non-existant config option. The POD spec does not specify any `info` config option, and with luck that won't change in the future.
 
 LICENCE
 =======
 
     The Artistic License 2.0 
 
-See LICENSE file in the repository for the full license text.`
+See LICENSE file in the repository for the full license text.
 
 
