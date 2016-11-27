@@ -60,7 +60,7 @@ Which produces the following output
 
     And a normal code block
     ```
-    I'm just normal
+    Stop comparing apples and oranges.
     ```
 
 EXAMPLE 
