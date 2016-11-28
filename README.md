@@ -59,6 +59,7 @@ Which produces the following output
     ```
 
     And a normal code block
+    
     ```
     Stop comparing apples and oranges.
     ```
