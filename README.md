@@ -12,7 +12,7 @@ If so, this module is for you.
 
 This module overrides `Pod::To::Markdown`'s multi-sub that handles `Pod::Block::Code`. In the resulting output, that code block will now be fenced rather than indented. In this case, it is no longer strict Markdown, but something closer to CommonMark.
 
-If that all it did this module would be pretty useless, so in addition, you can define a `info` config option, which will be set as the [info string](http://spec.commonmark.org/0.12/#info-string) on the code block. This will allow syntax highlighting of the code block where supported (like Github).
+If that's all it did this module would be pretty pointless, so in addition, you can define a `info` config option, which will be set as the [info string](http://spec.commonmark.org/0.12/#info-string) on the code block. This will allow syntax highlighting of the code block where supported (like Github).
 
 USAGE
 =====
